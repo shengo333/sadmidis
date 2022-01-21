@@ -1,7 +1,11 @@
 <template>
   <h2>this is main part</h2>
-  <input type="number" placeholder="0" v-model="amount">
-  <button @click="updateTaxes">click me to get information</button>
+
+    <div class="card">
+      <input type="number" placeholder="0" v-model="amount">
+      <button @click="updateTaxes">click me to get information</button>
+    </div>
+  
   <h2>Salary  is: {{amount}}</h2>
   <h2>income tax is: {{incomeTax}}</h2>
   <h2> Education budget is: {{educationBudget}}</h2>
@@ -48,6 +52,34 @@ export default {
 } 
 </script>
 
-<style>
+<style scoped>
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+
+}
+
+input{
+  display: inline-block;
+  padding: 3px;
+  text-align: center;
+  background: whitesmoke;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+button{
+  display: inline-block;
+  padding: 15px;
+  text-align: center;
+  background: rgb(96, 192, 52);
+  margin: 5px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
 
 </style>
