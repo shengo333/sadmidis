@@ -1,18 +1,17 @@
 <template>
-  <h2>this is main part</h2>
 
     <div class="card">
-      <input type="number" placeholder="0" v-model="amount">
+      <input type="number" placeholder="Please enter your salary" v-model="amount">
       <button @click="updateTaxes">click me to get information</button>
     </div>
   
   <h2>Salary  is: {{amount}}</h2>
-  <h2>income tax is: {{incomeTax}}</h2>
-  <h2> Education budget is: {{educationBudget}}</h2>
+  <h2>Income tax is: {{incomeTax}}</h2>
+  <h2>Education budget is: {{educationBudget}}</h2>
   <h2>Military service budget is: {{militaryBudget}}</h2>
   <h2>Security service budget is: {{securityBudget}}</h2>
   <h2>healthcare service budget is: {{healscareBudget}}</h2>
-  <h2>Irakli eats: {{irakliBudget}}</h2>
+  <h2>Government  eats: {{governmentBudget}}</h2>
 
 
 </template>
@@ -41,9 +40,9 @@ export default {
       }
     },
     computed: {
-      irakliBudget () {
+      governmentBudget () {
         if(this.amount) {
-          return this.amount * 2
+          return this.educationBudget + this.militaryBudget + this.securityBudget + this.healscareBudget
         } else {
           return 0
         }
@@ -58,7 +57,12 @@ export default {
   flex-direction: column;
   max-width: 300px;
   margin: auto;
+  padding-top: 20px;
 
+}
+
+h2{
+  padding: 5px 0 5px 0;
 }
 
 input{
@@ -77,7 +81,6 @@ button{
   background: rgb(96, 192, 52);
   margin: 5px;
   border-radius: 5px;
-  font-family: sans-serif;
   font-size: 20px;
 }
 

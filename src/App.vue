@@ -1,7 +1,9 @@
 <template>
-    <Header />
-    <Main />
-    <Footer />
+    <div id="conteiner">
+      <Header />
+      <Main />
+      <Footer />
+    </div>
 </template>
 
 <script>
@@ -21,13 +23,18 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background: whitesmoke;
+}
+#conteiner{
+  display: block;
+  padding: 10px 0 20px 40px;
 }
 </style>

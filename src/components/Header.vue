@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div id="header">
       <h2>Paying for public services</h2>
-      <h4>Enter the amount of our sallary and we will tell you how much are you paying for comunity services</h4>
+      <h3>Enter the amount of our sallary and we will tell you how much are you paying for comunity services</h3>
   </div>
 </template>
 
@@ -13,8 +13,15 @@ export default {
 
 <style scoped>
 
+#header{
+    border-bottom: solid gray;
+    border-radius: 5px;
+}
 h2{
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+h4{
+    display: inline-block;
+}
 </style>
