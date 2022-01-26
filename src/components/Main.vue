@@ -2,7 +2,7 @@
 
     <div class="card">
       <input type="number" placeholder="Please enter your salary" v-model="amount">
-      <button @click="updateTaxes">click me to get information</button>
+      <button @click="updateTaxes">Get the information</button>
     </div>
   
   <h2>Salary  is: {{amount}}</h2>
@@ -67,19 +67,22 @@ h2{
 
 input{
   display: inline-block;
-  padding: 3px;
+  padding: 15px 0 15px 0;
+  max-width: 170px;
   text-align: center;
+  justify-content: center;
   background: whitesmoke;
-  margin: 5px;
+  margin: auto;
   border-radius: 5px;
 }
 
 button{
   display: inline-block;
-  padding: 15px;
+  padding: 10px 0 10px 0;
+  max-width: 170px;
   text-align: center;
   background: rgb(96, 192, 52);
-  margin: 5px;
+  margin: 15px auto auto auto;
   border-radius: 5px;
   font-size: 20px;
 }
