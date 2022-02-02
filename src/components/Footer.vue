@@ -3,12 +3,22 @@
       <h2>Now you now how much goverment is taking from our work</h2>
   </div>
 
-  <button>Store data</button>
+  <button @click="storeData">Store data</button>
+  <button @click="clearData">Clear data</button>
+
 </template>
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    methods:{
+      storeData(){
+
+      },
+      clearData(){
+        
+      }
+    }
 }
 </script>
 
