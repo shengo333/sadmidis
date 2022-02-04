@@ -3,8 +3,10 @@
       <h2>Now you now how much goverment is taking from our work</h2>
   </div>
 
-  <button @click="storeData">Store data</button>
-  <button @click="clearData">Clear data</button>
+  <div id="button">
+    <button @click="storeData">Store data</button>
+    <button @click="clearData">Clear data</button>
+  </div>
 
 </template>
 
@@ -32,13 +34,19 @@ export default {
 }
 button{
   display: inline-block;
-  padding: 10px 0 10px 0;
+  padding: 10px 5px 10px 5px;
   max-width: 170px;
   text-align: center;
   background: rgb(117, 211, 195);
   margin: 15px auto auto auto;
   border-radius: 5px;
   font-size: 20px;
+  margin: 10px;
+}
+
+#button{
+  display: flex;
+  justify-content: center;
 }
 
 </style>
